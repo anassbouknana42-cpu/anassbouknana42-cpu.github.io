@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+  <form action="http://ncoge.com/phps/formulario.php" method="post">
+    
+    <div class="top-sections">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        Nombre: <input type="text" name="nombre"><br>
+        Apellidos: <input type="text" name="apellidos"><br>
+        Correo: <input type="text" name="email"><br>
+        <br>Hobbies:<br>
+        <textarea rows="5" cols="40" name="hobbies"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Idiomas</legend>
+        Puntúa tu nivel de idioma de 1 a 5:<br><br>
+
+        Inglés: 
+        <input type="radio" name="ingles" value="1">1
+        <input type="radio" name="ingles" value="2">2
+        <input type="radio" name="ingles" value="3">3
+        <input type="radio" name="ingles" value="4">4
+        <input type="radio" name="ingles" value="5">5
+        <br><br>
+
+        Francés: 
+        <input type="radio" name="frances" value="1">1
+        <input type="radio" name="frances" value="2">2
+        <input type="radio" name="frances" value="3">3
+        <input type="radio" name="frances" value="4">4
+        <input type="radio" name="frances" value="5">5
+        <br><br>
+
+        Alemán: 
+        <input type="radio" name="aleman" value="1">1
+        <input type="radio" name="aleman" value="2">2
+        <input type="radio" name="aleman" value="3">3
+        <input type="radio" name="aleman" value="4">4
+        <input type="radio" name="aleman" value="5">5
+      </fieldset>
+    </div>
+
+    <fieldset>
+      <legend>Domino los siguientes programas</legend>
+      <input type="checkbox" name="programas[]" value="Writer"> Writer
+      <input type="checkbox" name="programas[]" value="Base"> Base
+      <br>
+      <input type="checkbox" name="programas[]" value="Calc"> Calc
+      <input type="checkbox" name="programas[]" value="Impress"> Impress
+    </fieldset>
+
+    <fieldset>
+      <legend>Trabajo con el siguiente sistema operativo</legend>
+      Selecciona: 
+      <select id="so" name="so">
+        <option value="" selected>-selecciona-</option>
+        <option value="Linux">Linux</option>
+        <option value="Windows">Windows</option>
+        <option value="IOS">IOS</option>
+      </select>
+    </fieldset>
+
+    <div class="button-container">
+      <input type="reset" value="Reiniciar">
+    </div>
+  </form>
+</body>
+</html>
